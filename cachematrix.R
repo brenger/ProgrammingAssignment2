@@ -1,4 +1,4 @@
-## Cache inverted matrix
+## Calculate and put inverted matrix in cache
 
 makeCacheMatrix <- function(x = matrix()) {
 		m<-NULL
@@ -14,7 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
 				getinv=getinv)
 }
 
-## Retrieve inverted matrix cache if available, otherwise calculate it
+## Retrieve inverted matrix from cache if available, otherwise calculate it
 
 cacheSolve <- function(x=matrix(), ...) {
 		m<-x$getinv()
